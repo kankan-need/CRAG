@@ -1,0 +1,30 @@
+# CRAG + 知识库问答 核心依赖
+# Python 3.10-3.12 推荐
+
+# 向量存储与检索
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-core>=0.1.0
+langchain-text-splitters>=0.0.1
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# 检索评估 (CRAG 核心)
+transformers>=4.36.0
+torch>=2.0.0
+
+# API / CLI
+fastapi>=0.100.0
+uvicorn>=0.22.0
+python-dotenv>=1.0.0
+
+# PDF 解析 - MinerU (可选，需单独安装 mineru[all])
+# pip install "mineru[all]"  # 或 pip install mineru
+
+# Web 搜索扩展 (可选)
+httpx>=0.24.0
+beautifulsoup4>=4.12.0
+duckduckgo-search>=4.0.0
+
+# OpenAI 兼容 API (可选)
+langchain-openai>=0.0.5
